@@ -9,8 +9,8 @@ const Home = () => {
   return (
     <>
       <GlobalBackground />
-      <main className="pt-24 space-y-32 px-4 sm:px-6 lg:px-8">
-        <Hero />
+      <Hero />
+      <main className="px-4 sm:px-6 lg:px-8">
         <About />
         <Projects />
         <FindMe />

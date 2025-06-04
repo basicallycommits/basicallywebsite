@@ -47,7 +47,7 @@ const socials = [
 
 const FindMe = () => {
   return (
-    <section id="find-me" className="py-12">
+    <section id="find-me" className="pb-12 pt-44">
       <h2 className="heading h2 mb-8">Find Me</h2>
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
         {socials.map((site, i) => (
