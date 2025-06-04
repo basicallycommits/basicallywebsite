@@ -5,7 +5,7 @@ import { FindMe } from "@/app/components/FindMe";
 import { Contact } from "@/app/components/Contact";
 import { GlobalBackground } from "@/app/components/GlobalBackground";
 
-export default function Page() {
+const Home = () => {
   return (
     <>
       <GlobalBackground />
@@ -18,4 +18,6 @@ export default function Page() {
       <Contact />
     </>
   );
-}
+};
+
+export default Home;

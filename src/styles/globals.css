@@ -74,5 +74,6 @@ body {
 @font-face {
   font-family: "Cormorant";
   font-weight: 400;
-  src: url("assets/fonts/Cormorant/cormorant-regular.ttf") format("truetype");
+  src: url("../app/assets/fonts/Cormorant/cormorant-regular.ttf")
+    format("truetype");
 }
