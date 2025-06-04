@@ -1,4 +1,5 @@
 import { Project } from "@/lib/types";
+import Image from "next/image";
 
 const statusColorMap = {
   published:
@@ -23,11 +24,14 @@ export const ProjectCard = ({ project }: { project: Project }) => {
       <div className="relative flex flex-col md:flex-row items-center project-card overflow-hidden">
         {/* Image */}
         <div className="flex justify-center items-center p-4 w-full md:w-1/3">
-          <img
-            src={project.imageUrl}
-            alt={project.title}
-            className="h-48 w-full object-cover rounded-2xl"
-          />
+          <div className="relative h-48 w-full rounded-2xl overflow-hidden">
+            <Image
+              src={project.imageUrl}
+              alt={project.title}
+              fill
+              style={{ objectFit: "cover" }}
+            />
+          </div>
         </div>
 
         {/* Text */}

@@ -4,9 +4,9 @@ import { About } from "@/app/components/About";
 import { Projects } from "@/app/components/Projects";
 import { FindMe } from "@/app/components/FindMe";
 import { Contact } from "@/app/components/Contact";
-import { GlobalBackground } from "./components/GlobalBackground";
+import { GlobalBackground } from "@/app/components/GlobalBackground";
 
-function App() {
+export default function Page() {
   return (
     <>
       <GlobalBackground />
@@ -21,5 +21,3 @@ function App() {
     </>
   );
 }
-
-export default App;
