@@ -10,6 +10,7 @@ html {
 
 :root {
   --text-light: theme("colors.gray.700");
+  --text-dark: theme("colors.gray.300");
   --colour-primary: theme("colors.sky.500");
   --colour-accent: theme("colors.white");
 }
@@ -31,8 +32,7 @@ body {
     @apply text-[var(--text-light)] dark:text-[var(--text-dark)];
   }
 
-  a,
-  button {
+  a {
     @apply text-[var(--text-light)] dark:text-[var(--text-dark)] hover:text-[var(--colour-primary)] dark:hover:text-[var(--colour-primary-dark)] transition;
   }
 }
@@ -64,6 +64,26 @@ body {
 
   .text-field {
     @apply p-3 rounded-lg border border-gray-300 dark:bg-gray-800 dark:border-gray-700 dark:text-white;
+  }
+
+  .text-default {
+    @apply text-[var(--text-light)] dark:text-[var(--text-dark)];
+  }
+
+  .text-send-button {
+    @apply text-white dark:text-[var(--text-light)];
+  }
+
+  .text-important {
+    @apply text-[var(--colour-primary)] dark:text-[var(--colour-primary-dark)];
+  }
+
+  .bg-primary {
+    @apply bg-[var(--colour-primary)] dark:bg-[var(--colour-primary-dark)];
+  }
+
+  .bg-accent {
+    @apply bg-[var(--colour-accent)] dark:bg-[var(--colour-accent-dark)];
   }
 }
 

@@ -1,12 +1,9 @@
 const Contact = () => {
   return (
-    <footer
-      id="contact"
-      className="mt-24 py-16 px-4 sm:px-6 lg:px-8 bg-[var(--colour-accent)] dark:bg-[var(--colour-accent-dark)]"
-    >
+    <footer id="contact" className="mt-24 py-16 px-4 sm:px-6 lg:px-8 bg-accent">
       <div className="max-w-xl mx-auto text-center">
         <h2 className="heading h2">Contact</h2>
-        <p className="mt-4 text-gray-600 dark:text-gray-300">
+        <p className="mt-4 text-default">
           Want to get in touch? Send me a message below and I'll get back to
           you.
         </p>

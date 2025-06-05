@@ -60,17 +60,13 @@ const FindMe = () => {
             } // Only set target="_blank" for external links
             className="flex items-center p-6 bg-[var(--colour-accent)] dark:bg-[var(--colour-accent-dark)] rounded-2xl shadow-md hover:shadow-lg transition hover:scale-[1.02]"
           >
-            <div className="mr-4 text-sky-500 dark:text-sky-400">
-              {site.icon}
-            </div>
+            <div className="mr-4 text-important">{site.icon}</div>
             <div>
-              <h4 className="text-left font-semibold text-gray-800 dark:text-white">
+              <h4 className="text-left font-semibold text-important">
                 {site.title}
               </h4>
               {site.description && (
-                <p className="text-sm text-gray-600 dark:text-gray-300">
-                  {site.description}
-                </p>
+                <p className="text-sm text-default">{site.description}</p>
               )}
             </div>
           </a>
