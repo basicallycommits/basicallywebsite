@@ -1,6 +1,6 @@
 const Contact = () => {
   return (
-    <section
+    <footer
       id="contact"
       className="mt-24 py-16 px-4 sm:px-6 lg:px-8 bg-[var(--colour-accent)] dark:bg-[var(--colour-accent-dark)]"
     >
@@ -38,7 +38,7 @@ const Contact = () => {
           </button>
         </form>
       </div>
-    </section>
+    </footer>
   );
 };
 
