@@ -5,8 +5,8 @@ import { Project } from "@/lib/types";
 import Image from "next/image";
 import { Dialog, DialogPanel } from "@headlessui/react";
 import { XIcon } from "lucide-react";
-import ReactMarkdown from "react-markdown";
 import StatusChip from "./StatusChip";
+import Markdown from "../utils/Markdown";
 
 export const ProjectCard = ({ project }: { project: Project }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -90,7 +90,7 @@ export const ProjectCard = ({ project }: { project: Project }) => {
             {/* Expanded Details */}
             {project.expandedDetails && (
               <div className="prose dark:prose-invert">
-                <ReactMarkdown>{project.expandedDetails}</ReactMarkdown>
+                <Markdown>{project.expandedDetails}</Markdown>
               </div>
             )}
 

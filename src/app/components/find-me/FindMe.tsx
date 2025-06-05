@@ -62,9 +62,9 @@ const FindMe = () => {
           >
             <div className="mr-4 text-important">{site.icon}</div>
             <div>
-              <h4 className="text-left font-semibold text-important">
+              <h5 className="text-left font-semibold text-important">
                 {site.title}
-              </h4>
+              </h5>
               {site.description && (
                 <p className="text-sm text-default">{site.description}</p>
               )}
