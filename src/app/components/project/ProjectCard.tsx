@@ -5,6 +5,7 @@ import { Project } from "@/lib/types";
 import Image from "next/image";
 import { Dialog, DialogPanel } from "@headlessui/react";
 import { XIcon } from "lucide-react";
+import StatusChip from "./StatusChip";
 
 export const ProjectCard = ({ project }: { project: Project }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,7 +28,6 @@ export const ProjectCard = ({ project }: { project: Project }) => {
               />
             </div>
           </div>
-          {/* Preview*/}
           <div className="p-6 md:w-2/3 w-full flex flex-col gap-2">
             <div className="absolute top-4 right-4 text-right text-xs text-gray-500 dark:text-gray-400 space-y-0.5">
               <div>{project.date}</div>
@@ -55,14 +55,24 @@ export const ProjectCard = ({ project }: { project: Project }) => {
         <div className="fixed inset-0 bg-black/30 backdrop-blur-sm" />
         <div className="fixed inset-0 flex items-center justify-center p-4">
           <DialogPanel className="w-full max-w-3xl rounded-xl bg-white dark:bg-gray-900 shadow-xl p-6 overflow-y-auto max-h-[90vh] relative">
-            {/* Close button */}
-            <button
-              onClick={() => setIsOpen(false)}
-              className="absolute top-4 right-4 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-white"
-              aria-label="Close project details"
-            >
-              <XIcon className="w-5 h-5" />
-            </button>
+            {/* Top-right chips + close button */}
+            <div className="absolute top-4 right-4 flex items-start justify-end gap-2">
+              <StatusChip status={project.status} />
+
+              {/* Date Chip */}
+              <span className="text-xs font-medium px-2 py-1 rounded-full bg-gray-200 text-gray-800 dark:bg-gray-700 dark:text-gray-100">
+                {project.date}
+              </span>
+
+              {/* Close Button */}
+              <button
+                onClick={() => setIsOpen(false)}
+                className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-white"
+                aria-label="Close project details"
+              >
+                <XIcon className="w-5 h-5" />
+              </button>
+            </div>
 
             {/* Accessible title element */}
             <h2
