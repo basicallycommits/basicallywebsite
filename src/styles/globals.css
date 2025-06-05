@@ -70,10 +70,6 @@ body {
     @apply text-[var(--text-light)] dark:text-[var(--text-dark)];
   }
 
-  .text-send-button {
-    @apply text-white dark:text-[var(--text-light)];
-  }
-
   .text-important {
     @apply text-[var(--colour-primary)] dark:text-[var(--colour-primary-dark)];
   }
