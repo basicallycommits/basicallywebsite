@@ -2,7 +2,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="py-16 px-4 sm:px-6 lg:px-8 bg-[var(--colour-accent)] dark:bg-[var(--colour-accent-dark)]"
+      className="mt-24 py-16 px-4 sm:px-6 lg:px-8 bg-[var(--colour-accent)] dark:bg-[var(--colour-accent-dark)]"
     >
       <div className="max-w-xl mx-auto text-center">
         <h2 className="heading h2">Contact</h2>
