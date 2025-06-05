@@ -9,8 +9,6 @@ import { Project } from "@/lib/types";
 export const projectList: Project[] = [
   {
     title: "Smart Energy Monitor",
-    descriptionHtml:
-      'A system designed on a PCB to track energy usage and provide insights. Find more information <a href="https://courseoutline.auckland.ac.nz/dco/course/COMPSYS/209" target="_blank" rel="noopener noreferrer" class="underline text-blue-500 dark:text-blue-300 hover:text-blue-700 dark:hover:text-blue-100">on the university\'s website,</a> or on <a href="https://uoa-ece209.github.io/" target="_blank" rel="noopener noreferrer" class="underline text-blue-500 dark:text-blue-300 hover:text-blue-700 dark:hover:text-blue-100">this page</a>.',
     imageUrl:
       "https://images.unsplash.com/photo-1724770388447-30b015a5cbb6?q=80&w=1939&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     date: "Expected Start: Jul 2025",
@@ -54,8 +52,6 @@ export const projectList: Project[] = [
   },
   {
     title: "AUSA Wellbeing Tracker",
-    descriptionHtml:
-      'Team project with @WDCC. A hub that enables University of Auckland students to seamlessly access the university\'s health and counselling services. Built by students, for students. Find out more <a href="https://wdcc.co.nz/projects/2025/ausa" target="_blank" rel="noopener noreferrer" class="underline text-blue-500 dark:text-blue-300 hover:text-blue-700 dark:hover:text-blue-100">here</a>.',
     imageUrl: wdccImg,
     repoUrl: "https://github.com/UoaWDCC/ausa",
     date: "Mar 2025 – Present",

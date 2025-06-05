@@ -54,16 +54,9 @@ export const ProjectCard = ({ project }: { project: Project }) => {
             </div>
           </div>
 
-          {project.descriptionHtml ? (
-            <p
-              className="text-gray-600 dark:text-gray-300"
-              dangerouslySetInnerHTML={{ __html: project.descriptionHtml }}
-            />
-          ) : (
-            <p className="text-gray-600 dark:text-gray-300">
-              {project.description}
-            </p>
-          )}
+          <p className="text-gray-600 dark:text-gray-300">
+            {project.description ?? project.description}
+          </p>
 
           {project.placeholderImage && (
             <span className="text-xs mt-1 text-gray-400 italic">
