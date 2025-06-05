@@ -32,9 +32,9 @@ const Navbar = () => {
 
         {/* Desktop Links */}
         <div className="hidden md:flex space-x-6 items-center">
-          <a href="#about">About</a>
-          <a href="#projects">Projects</a>
-          <a href="#find-me">Find Me</a>
+          <a href="/">Home</a>
+          <a href="/projects">Projects</a>
+          <a href="/blog">Blog</a>
           <a href="#contact">Contact</a>
           <button onClick={toggleTheme} className="ml-4">
             {isDark ? (
@@ -54,13 +54,13 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden px-4 pb-4 space-y-2">
-          <a href="#about" className="block py-2 ">
-            About
+          <a href="/" className="block py-2 ">
+            Home
           </a>
-          <a href="#projects" className="block py-2 ">
+          <a href="/projects" className="block py-2 ">
             Projects
           </a>
-          <a href="#find-me" className="block py-2 ">
+          <a href="/blog" className="block py-2 ">
             Find Me
           </a>
           <a href="#contact" className="block py-2 ">
