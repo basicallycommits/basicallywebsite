@@ -1,4 +1,4 @@
-import { Projects } from "@/app/components/Projects";
+import { Projects } from "@/app/components/project/Projects";
 
 const ProjectsPage = () => {
   return (

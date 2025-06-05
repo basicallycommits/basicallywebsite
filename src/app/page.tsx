@@ -1,7 +1,6 @@
-import { Hero } from "@/app/components/Hero";
-import { About } from "@/app/components/About";
-import { FindMe } from "@/app/components/FindMe";
-import { Contact } from "@/app/components/Contact";
+import { Hero } from "@/app/components/hero/Hero";
+import { About } from "@/app/components/about/About";
+import { FindMe } from "@/app/components/find-me/FindMe";
 
 const Home = () => {
   return (

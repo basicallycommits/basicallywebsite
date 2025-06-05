@@ -1,8 +1,8 @@
 import "@/styles/globals.css";
-import { Navbar } from "./components/Navbar";
+import { Navbar } from "./components/navbar/Navbar";
 import type { Metadata } from "next";
-import { GlobalBackground } from "./components/GlobalBackground";
-import { Contact } from "./components/Contact";
+import { GlobalBackground } from "./components/background/GlobalBackground";
+import { Contact } from "./components/contact/Contact";
 
 export const metadata: Metadata = {
   title: "Vincent's Website",

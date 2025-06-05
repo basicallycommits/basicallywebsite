@@ -3,7 +3,7 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/app/components/Accordion";
+} from "@/app/components/accordion/Accordion";
 
 const AboutAccordion = () => {
   return (
