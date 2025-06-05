@@ -5,6 +5,7 @@ import { Project } from "@/lib/types";
 import Image from "next/image";
 import { Dialog, DialogPanel } from "@headlessui/react";
 import { XIcon } from "lucide-react";
+import ReactMarkdown from "react-markdown";
 import StatusChip from "./StatusChip";
 
 export const ProjectCard = ({ project }: { project: Project }) => {
@@ -86,19 +87,19 @@ export const ProjectCard = ({ project }: { project: Project }) => {
               {project.description}
             </p>
 
+            {/* Expanded Details */}
+            {project.expandedDetails && (
+              <div className="prose dark:prose-invert">
+                <ReactMarkdown>{project.expandedDetails}</ReactMarkdown>
+              </div>
+            )}
+
             {/* Carousel Placeholder */}
             <div className="rounded-lg overflow-hidden bg-gray-100 dark:bg-gray-800 p-4 mb-4">
               <p className="text-center text-gray-500 dark:text-gray-400">
                 [Carousel of images/videos goes here]
               </p>
             </div>
-
-            {/* Expanded Details */}
-            {project.expandedDetails && (
-              <p className="text-gray-700 dark:text-gray-200">
-                {project.expandedDetails}
-              </p>
-            )}
 
             {/* Skills */}
             {Array.isArray(project.skillsUsed) && (

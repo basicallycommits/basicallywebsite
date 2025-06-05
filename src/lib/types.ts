@@ -12,5 +12,5 @@ export type Project = {
   status: ProjectStatus;
   skillsUsed?: string[];
   placeholderImage?: boolean;
-  expandedDetails?: string[];
+  expandedDetails?: string;
 };

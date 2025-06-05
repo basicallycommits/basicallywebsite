@@ -9,6 +9,15 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  webpack(config) {
+    config.module.rules.push({
+      test: /\.md$/,
+      resourceQuery: /raw/,
+      use: "raw-loader",
+    });
+
+    return config;
+  },
 };
 
 export default nextConfig;

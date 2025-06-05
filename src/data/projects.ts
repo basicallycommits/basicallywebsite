@@ -5,6 +5,7 @@ import escapeRoomImg from "@/app/assets/images/escape_room.png";
 import motorImg from "@/app/assets/images/299-motor.png";
 import freakyBirdImg from "@/app/assets/images/freaky-bird.png";
 import { Project } from "@/lib/types";
+import testProjectMd from "@/data/testproject.md?raw";
 
 export const projectList: Project[] = [
   {
@@ -15,6 +16,7 @@ export const projectList: Project[] = [
     status: "coming-soon",
     skillsUsed: ["Altium Designer", "Microchip Studio", "Proteus", "LTSpice"],
     placeholderImage: true,
+    expandedDetails: testProjectMd,
   },
   {
     title: "Freaky Bird",
